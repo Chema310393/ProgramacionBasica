@@ -3,7 +3,7 @@ let letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', '
 let numero = prompt("DNI sin letra: ");
 let letra = prompt("Letra DNI");
 letra = letra.toUpperCase();
-if ((parseInt(numero)%99999999) < 1 || parseInt(numero) > 99999999) {
+if (parseInt(numero) < 10000000 || parseInt(numero) > 99999999) {
   alert("El número proporcionado no es válido");
 } else {
   let letraCorrecta = letras[numero % 23];
