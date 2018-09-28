@@ -5,6 +5,6 @@
   for (let index = numero; index > 0; index--) {
     factorial *= index;
   }
-
+  print('El factorial de ' + numero + ' es ' + factorial);
   alert('El factorial de ' + numero + ' es ' + factorial);
 }
