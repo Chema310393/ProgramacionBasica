@@ -1,9 +1,9 @@
 {
-  let numero, factorial = 1;
-
-  numero = prompt('Introduzca un número: ');
-  for (let index = numero; index > 0; index--) {
-    factorial *= index;
-  }
-  alert('El factorial de ' + numero + ' es ' + factorial);
+  let cadena = prompt('Introduzca una cadena: ');
+  if (cadena.toUpperCase() == cadena)
+    document.getElementById("parrafo").innerHTML = "Está en mayúsculas.";
+  else if (cadena.toLowerCase() == cadena)
+    document.getElementById("parrafo").innerHTML = "Está en minúsculas.";
+  else
+    document.getElementById("parrafo").innerHTML = "Está en mayúsculas y minúsculas."
 }
