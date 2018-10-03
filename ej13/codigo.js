@@ -1,4 +1,5 @@
 {
+
   function anade() {
     var elemento = document.createElement("li");
     var texto = document.createTextNode("Nuevo elemento");
@@ -7,8 +8,12 @@
     var lista = document.getElementById("lista");
     lista.appendChild(elemento);
    
-    var nuevoElemento = "<li>Nuevo elemento</li>";
-    lista.innerHTML = lista.innerHTML + nuevoElemento;
   }
+
+  function init(){
+    document.getElementById("boton").addEventListener("click", anade);
+  }
+
+  window.addEventListener("load", init);
 }
 
